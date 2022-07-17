@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff2e6"
+    tools:context=".TestSonucFragment">
+
+
+    <TextView
+        android:id="@+id/textViewDogruSayisi"
+        android:layout_width="76dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="60dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTestDogru"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTestDegerlendirme" />
+
+    <TextView
+        android:id="@+id/textViewTestDogru"
+        android:layout_width="137dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="72dp"
+        android:text="DOĞRU"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTestDegerlendirme" />
+
+    <TextView
+        android:id="@+id/textViewYanlisSayisi"
+        android:layout_width="76dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="36dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTestYanlis"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDogruSayisi" />
+
+    <TextView
+        android:id="@+id/textViewTestDegerlendirme"
+        android:layout_width="322dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="80dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTestYanlis"
+        android:layout_width="133dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="76dp"
+        android:text="YANLIŞ"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTestDogru" />
+
+    <TextView
+        android:id="@+id/textViewTestPuan"
+        android:layout_width="113dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="64dp"
+        android:text="PUAN:"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewYanlisSayisi" />
+
+    <TextView
+        android:id="@+id/textViewPuan"
+        android:layout_width="83dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="64dp"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewTestPuan"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTestYanlis" />
+
+    <Button
+        android:id="@+id/buttonMenuyeDon"
+        android:layout_width="238dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#8D7688"
+        android:text="ANA MENÜYE DÖN"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTestPuan" />
+</androidx.constraintlayout.widget.ConstraintLayout>

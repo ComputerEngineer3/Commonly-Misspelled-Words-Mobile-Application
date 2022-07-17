@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff2e6"
+    tools:context=".MenuFragment">
+
+    <Button
+        android:id="@+id/buttonSiralama"
+        android:layout_width="359dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="13dp"
+        android:backgroundTint="#8D7688"
+        android:text="SIRALAMANI GÖR"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonYanlisKelimeler" />
+
+    <Button
+        android:id="@+id/buttonBasla"
+        android:layout_width="146dp"
+        android:layout_height="83dp"
+        android:layout_marginBottom="104dp"
+        android:backgroundTint="#8D7688"
+        android:text="BAŞLA"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonGozat"
+        android:layout_width="359dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="96dp"
+        android:backgroundTint="#8D7688"
+        android:text="KELİMELERE GÖZ AT"
+        android:textSize="18sp"
+        app:backgroundTint="#ffcad4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonYanlisKelimeler"
+        android:layout_width="359dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="22dp"
+        android:backgroundTint="#8D7688"
+        android:text="YANLIŞ YAPTIĞIM KELİMELER"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGozat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

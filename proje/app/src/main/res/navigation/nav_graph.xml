@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.kartrlanszckler.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_kayitFragment"
+            app:destination="@id/kayitFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kayitFragment"
+        android:name="com.example.kartrlanszckler.KayitFragment"
+        android:label="fragment_kayit"
+        tools:layout="@layout/fragment_kayit" >
+        <action
+            android:id="@+id/action_kayitFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.kartrlanszckler.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_kelimelereGozAtFragment"
+            app:destination="@id/kelimelereGozAtFragment" />
+        <argument
+            android:name="menukId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_menuFragment_to_yanlisYapilanKelimelerFragment"
+            app:destination="@id/yanlisYapilanKelimelerFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_testFragment4"
+            app:destination="@id/testFragment4" />
+        <action
+            android:id="@+id/action_menuFragment_to_siralamaFragment"
+            app:destination="@id/siralamaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kelimelereGozAtFragment"
+        android:name="com.example.kartrlanszckler.KelimelereGozAtFragment"
+        android:label="fragment_kelimelere_goz_at"
+        tools:layout="@layout/fragment_kelimelere_goz_at" />
+    <fragment
+        android:id="@+id/yanlisYapilanKelimelerFragment"
+        android:name="com.example.kartrlanszckler.YanlisYapilanKelimelerFragment"
+        android:label="fragment_yanlis_yapilan_kelimeler"
+        tools:layout="@layout/fragment_yanlis_yapilan_kelimeler" >
+        <argument
+            android:name="yanlisKelimelerkId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/testFragment4"
+        android:name="com.example.kartrlanszckler.TestFragment"
+        android:label="fragment_test"
+        tools:layout="@layout/fragment_test" >
+        <argument
+            android:name="testkId"
+            app:argType="integer" />
+        <argument
+            android:name="testKararId"
+            app:argType="integer" />
+        <argument
+            android:name="testSoruSayisi"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_testFragment4_to_testSonucFragment5"
+            app:destination="@id/testSonucFragment5" />
+    </fragment>
+    <fragment
+        android:id="@+id/testSonucFragment5"
+        android:name="com.example.kartrlanszckler.TestSonucFragment"
+        android:label="fragment_test_sonuc"
+        tools:layout="@layout/fragment_test_sonuc" >
+        <argument
+            android:name="tsonucDogruS"
+            app:argType="integer" />
+        <argument
+            android:name="tsonucYanlisS"
+            app:argType="integer" />
+        <argument
+            android:name="tsonucPuan"
+            app:argType="integer" />
+        <argument
+            android:name="tsonuckId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_testSonucFragment5_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/siralamaFragment"
+        android:name="com.example.kartrlanszckler.SiralamaFragment"
+        android:label="fragment_siralama"
+        tools:layout="@layout/fragment_siralama" />
+
+</navigation>

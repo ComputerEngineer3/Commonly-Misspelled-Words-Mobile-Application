@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff2e6"
+    tools:context=".SiralamaFragment">
+
+
+    <Button
+        android:id="@+id/buttonGenelSiralama"
+        android:layout_width="113dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#8D7688"
+        android:text="GENEL SIRALAMA"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSiralamaBaslik"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonAylikSiralama"
+        android:layout_width="113dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#8D7688"
+        android:text="AYLIK SIRALAMA"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/buttonGenelSiralama"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSiralamaBaslik"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonGunlukSiralama"
+        android:layout_width="113dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#8D7688"
+        android:text="GÜNLÜK SIRALAMA"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAylikSiralama"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSiralamaBaslik"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewSiralamaBaslik"
+        android:layout_width="339dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="28dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="395dp"
+        android:layout_height="505dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSiralamaBaslik"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recrecyclerview3"
+            android:layout_width="match_parent"
+            android:layout_height="451dp"
+            android:orientation="vertical"
+            android:background="#fff2e6"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_siralamalar"
+            />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
